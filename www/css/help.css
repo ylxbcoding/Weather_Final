@@ -1,0 +1,225 @@
+
+/*-----cover----*/
+
+.enterIndexBtn {
+    position: absolute;
+    bottom: 33%;
+    left: 50%;
+    border: 1px #999 solid;
+    width: 30%;
+    margin-left: -15%;
+    height: 30px;
+    font-size: 18px;
+    border-radius: 15px;
+    color: #777;
+    text-align: center;
+}
+
+
+/*-----setting----*/
+
+.appVersion,
+.copyRight {
+    line-height: 15px;
+    font-size: 15px;
+    margin: 5px;
+    text-align: center;
+    color: #000;
+    /*text-shadow: 1px 2px 9px #000;*/
+}
+
+.setTip {
+    font-size: 12px;
+    clear: both;
+    height: 12px;
+    line-height: 12px;
+    float: left;
+    margin: -10px 0 8px 8%;
+}
+
+#helpType3 ul li {
+    margin: 0;
+    height: 42px;
+    line-height: 42px;
+    /*border-bottom: 1px #999 dashed;*/
+    clear: both;
+    font-size: 18px;
+    list-style-type: none;
+}
+
+#rangeBleRssi {
+    line-height: 42px;
+    height: 42px;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    overflow: hidden;
+    /* 限定範圍 */
+    width: 200px;
+    height: 20px;
+    outline: none;
+    /* 避免點選會有藍線或虛線 */
+    background: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    position: relative;
+    /* 設為相對位置，為了前後區塊的絕對位置而設定 */
+    width: 10px;
+    height: 10px;
+    /*background: rgb(169, 144, 106);*/
+    background: #E35F13;
+    border-radius: 50%;
+    transition: .2s;
+    /* 點選放大時候的漸變時間 */
+}
+
+input[type="range"]::-webkit-slider-thumb:before,
+input[type="range"]::-webkit-slider-thumb:after {
+    position: absolute;
+    top: 3px;
+    width: 2000px;
+    /* 長度很長沒關係，因為剛剛有用 overflow:hidden 了 */
+    height: 4px;
+    content: "";
+    pointer-events: none;
+    /* 讓滑鼠可以點擊穿透偽元素，不然會點不到下面 */
+    transition: .2s;
+}
+
+input[type="range"]::-webkit-slider-thumb:before {
+    left: -1997px;
+    /*background: rgb(169, 144, 106);*/
+     background: #E35F13;
+}
+
+input[type="range"]::-webkit-slider-thumb:after {
+    left: 10px;
+    background: #edc;
+}
+
+input[type="range"]:active::-webkit-slider-thumb:before,
+input[type="range"]:active::-webkit-slider-thumb:after {
+    top: 6px;
+}
+
+input[type="range"]:active::-webkit-slider-thumb {
+    width: 16px;
+    height: 16px;
+}
+
+input[type="range"]:active::-webkit-slider-thumb:after {
+    left: 16px;
+}
+
+.fontsizeSetting div {
+    color: #fff;
+    /* margin: 5px 13px; */
+    border: none;
+    width: 33.3%;
+    float: left;
+}
+
+#helpType3 a,
+#helpType3 a:focus,
+#helpType3 a:hover,
+#helpType3 a:after,
+#helpType3 a:visited,
+#helpType3 a:active {
+    outline: none;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.settingIcon {
+    width: 6%;
+    float: left;
+    font-size: 16px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.setUl {
+    padding: 5px;
+    position: relative;
+    left: 50%;
+    margin-left: -48%;
+    width: 96%;
+    box-shadow: 1px 1px 5px #999;
+    /*border-radius: 5px;*/
+}
+
+.setUl a {
+    /*color: rgb(169, 144, 106);*/
+     color: #E35F13;
+}
+
+#setTypeTitle {
+    color: #999;
+    font-size: 15px;
+    text-align: left;
+    margin: 10px 20px;
+}
+
+.lineImg {
+    margin: 0;
+    height: 1px;
+    padding: 0;
+    vertical-align: middle;
+    float: left;
+}
+
+
+/*更新日志*/
+
+#updateLogDiv {
+    height: 40%;
+    width: 80%;
+    background: rgba(230, 230, 230, 0.96);
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-left: -40%;
+    box-shadow: 2px 2px 7px #ddd;
+    border-radius: 15px;
+}
+
+#updateLogTitle {
+    font-size: 20px;
+    text-align: center;
+    margin: 2% 0;
+    line-height: 30px;
+    height: 30px;
+}
+
+#updateLogContent {
+    font-size: 16px;
+    width: 100%;
+    padding: 0 5%;
+    height: 80%;
+    overflow: auto;
+    text-align: left;
+}
+
+#updateLogContent p {
+    font-size: 16px;
+    color: #000;
+    /* text-indent: 2em; */
+}
+
+#updateLogClose {
+    color: #000;
+    margin: 2.5% 5% 2% 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 24px;
+    height: 30px;
+    line-height: 30px;
+}
+
+#bleRssi div {
+    float: left;
+}

@@ -1,0 +1,165 @@
+
+#canvas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+#contentHolder {
+    background: #ccc;
+    text-align: center;
+}
+
+#imgSaving {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.45);
+    color: #fff;
+    height: 30px;
+    width: 100px;
+    font-size: 20px;
+    margin-left: -50px;
+    margin-top: -45px;
+    border-radius: 10px;
+}
+
+
+/*#saveCanvas {
+    color: #000;
+    left: 20%;
+    bottom: 8px;
+    position: absolute;
+}*/
+
+.share-lay {
+    position: absolute;
+    bottom: 11px;
+    z-index: 99;
+    left: 45%;
+    border: 4px solid rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.65);
+    border-radius: 42px;
+    height: 50px;
+    width: 50px;
+    box-shadow: 1px 1px 1px #888;
+}
+
+.modal-header .close {
+    outline: none;
+}
+
+#toastMessage {
+    position: absolute;
+    bottom: 70px;
+    border-radius: 5px;
+    z-index: 99;
+    color: white;
+    font-size: 18px;
+    left: 50%;
+    width: 80%;
+    margin-left: -40%;
+    text-align: center;
+    padding: 5px;
+    /* margin: 24px; */
+    background-color: rgba(60, 60, 60, 0.95);
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+.ngdialog-overlay {
+    background: rgba(255, 255, 255, 0);
+}
+
+.ngdialog-share-content .modal-body {
+    height: 200px;
+    vertical-align: middle;
+    padding: 0 15px;
+    width: 100%;
+    /*margin: 0 10px 15px 10px;*/
+    float: left;
+}
+
+.ngdialog-share-content {
+    /* margin: 150px 20px 20px 20px; */
+    overflow: hidden;
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.8);
+    transform: translate3d(0, 0, 0) !important;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -160px;
+    width: 320px;
+    /* height: 200px; */
+}
+
+.ngdialog-place-content {
+    margin: 165px 100px 20px 100px;
+    overflow: hidden;
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.8);
+    transform: translate3d(0, 0, 0) !important;
+    border-radius: 10px;
+}
+
+.modal .close {
+    font-size: 25px;
+    font-weight: 900;
+    color: #fff;
+    text-shadow: 0 1px 0 #0A0A0A;
+    opacity: 1;
+}
+
+.modal-header {
+    border-bottom: 0 solid #e5e5e5;
+    padding-bottom: 0;
+}
+
+.modal-title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.modal-body figcaption {
+    text-align: center;
+    font-size: 12px;
+    color: #333;
+}
+
+.modal-body figure {
+    display: inline-block;
+    width: 73px;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.modal-body figure img {
+    padding: 10px;
+}
+
+.modal-body figcaption {
+    text-align: center;
+    text-underline-style: none;
+    font-size: 14px;
+    text-shadow: 1px 2px 5px #fff;
+}
+
+.modal-backdrop {
+    z-index: 99 !important;
+}
+
+.modal-footer {
+    border-top: 0 solid #e5e5e5;
+    margin: 10px;
+}
+
+.modal-footer .btn {
+    width: 260px;
+}

@@ -1,0 +1,94 @@
+<header class="bar bar-nav headerBar">
+    <back-View></back-View>
+    <h1 class="title H1">设置</h1>
+</header>
+<div id="helpType3" class="content marginTop" style="overflow: auto;">
+    <div id="setTypeTitle">功能设置</div>
+    <ul class="setUl">
+        <li>
+            <div class="settingIcon"><i class="fa fa-phone  "></i></div>
+            <div style="float: left;">听筒播放</div>
+            <div style="float: right;width:15%;font-size: 30px;text-align: center;">
+                <a id="speakerBtn"><i class="fa fa-toggle-off"></i></a>
+                <a id="earpieceBtn"><i class="fa fa-toggle-on"></i></a>
+            </div>
+        </li>
+        <img src="img/content_line.png" class="lineImg">
+        <li>
+            <div class="settingIcon"><i class="fa fa-map-marker  "></i></div>
+            <div style="float: left;">自动定位</div>
+            <div style="float: right;width:15%;font-size: 30px;text-align: center;">
+                <a id="bleStatusOff"><i class="fa fa-toggle-off  "></i></a>
+                <a id="bleStatusOn"><i class="fa fa-toggle-on  "></i></a>
+            </div>
+            <div class="setTip">请确保手机蓝牙已开启！</div>
+        </li>
+        <!-- <img src="img/content_line.png" class="lineImg">
+        <li>
+            <div class="settingIcon"><i class="fa fa-mobile fa-rotate-90 "></i></div>
+            <div style="float: left;">允许横屏</div>
+            <div style="float: right;width:15%;font-size: 30px;text-align: center;">
+                <a id="orientationOff"><i class="fa fa-toggle-off  "></i></a>
+                <a id="orientationOn"><i class="fa fa-toggle-on  "></i></a>
+            </div>
+            <div class="setTip">请确保手机旋转功能已开启！</div>
+        </li> -->
+    </ul>
+    <ul style="height: 20px"></ul>
+    <div id="setTypeTitle">系统设置</div>
+    <ul class="setUl" style="margin-bottom: 50px">
+        <li id="clearCacheSet">
+            <div class="settingIcon"><i class="fa fa-trash  "></i></div>
+            <div style="float: left;">清除缓存</div>
+            <div style="float: right;width:15%;text-align: center;">
+                <i class="fa fa-chevron-right"></i>
+            </div>
+        </li>
+        <img src="img/content_line.png" class="lineImg">
+        <li id="updateLogBtn">
+            <div class="settingIcon"><i class="fa fa-file-text-o  "></i></div>
+            <div style="float: left;">更新日志</div>
+            <div style="float: right;width:15%;text-align: center;">
+                <i class="fa fa-chevron-right"></i>
+            </div>
+        </li>
+        <img src="img/content_line.png" class="lineImg">
+        <li id="checkVersionSet">
+            <div class="settingIcon"><i class="fa fa-cloud-download   "></i></div>
+            <div style="float: left;">检测更新</div>
+            <div style="float: right;width:15%;text-align: center;">
+                <i class="fa fa-chevron-right"></i>
+            </div>
+        </li>
+        <img src="img/content_line.png" class="lineImg">
+        <!-- <li id="bleRssi">
+            <div class="settingIcon"><i class="fa  fa-globe"></i></div>
+            <div style="float: left;">定位矫正</div>
+            <div style="float: right;font-size: 16px">
+                 <div>过滤</div>
+                <div id="canScanRssi"></div>
+                <div>;触发</div>
+                <div id="canExhibitRssi"></div>
+            </div>
+            <div class="setTip">请确保在指定的矫正位置！</div>
+        </li>
+        <img src="img/content_line.png" class="lineImg"> -->
+        <li id="bleRssiVal">
+            <div class="settingIcon"><i class="fa  fa-signal"></i></div>
+            <div style="float: left;">距离微调</div>
+            <div style="float: right;font-size: 16px">
+                <div style="float: left;padding: 0 5px;font-size: 10px;">远</div>
+                <input type="range" id="rangeBleRssi" min="-71" max="-41" step="5" onchange="getRange()" style="width: 70%;float: left;">
+                <div style="float: left;  padding: 0 5px;font-size: 10px;">近</div>
+            </div>
+        </li>
+    </ul>
+    <div class="appVersion"></div>
+    <div class="copyRight"></div>
+    <div id="updateLogDiv" style="display: none">
+        <div id="updateLogTitle"></div>
+        <a id="updateLogClose" class=" pull-right">x</a>
+        <!-- <a id="updateLogClose" class="icon icon-close pull-right"></a> -->
+        <div id="updateLogContent"></div>
+    </div>
+</div>

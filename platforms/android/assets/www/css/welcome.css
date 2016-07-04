@@ -1,0 +1,38 @@
+.welcomeLogo img,
+.welcomeBg img,
+.enterLogo img,
+.welcomeTitle img {
+    height: 100%;
+    width: 100%;
+}
+
+.welcomePage {
+    height: 100%;
+    width: 100%;
+    background: rgb(241, 225, 185);
+    /*background: rgb(228, 209, 166);*/
+}
+
+.welcomeLogo {
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    width: 73%;
+    margin-left: -36%;
+}
+
+.welcomeTitle {
+    position: absolute;
+    top: 59%;
+    left: 50%;
+    width: 66%;
+    margin-left: -33%;
+}
+
+.enterLogo {
+    position: absolute;
+    top: 78%;
+    width: 18%;
+    left: 50%;
+    margin-left: -9%;
+}

@@ -1,0 +1,43 @@
+{
+  "name": "cordova-base64-image-saver",
+  "version": "0.6.0",
+  "description": "This plugin allows you to save the contents of an HTML canvas tag to the iOS Photo Library, or Android Gallery from your app.",
+  "cordova": {
+    "id": "org.solderzzc.base64imagesaverplugin",
+    "platforms": [
+      "ios",
+      "android",
+      "wp8"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solderzzc/Base64ImageSaverPlugin.git"
+  },
+  "keywords": [
+    "image",
+    "base64",
+    "save",
+    "photo library",
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android",
+    "cordova-wp8"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": {
+    "name": "Simba Zhang",
+    "email": "solderzzc@gmail.com",
+    "url": "http://www.tiegushi.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/solderzzc/Base64ImageSaverPlugin/issues"
+  },
+  "homepage": "https://github.com/solderzzc/Base64ImageSaverPlugin#readme"
+}

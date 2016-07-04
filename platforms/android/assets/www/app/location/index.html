@@ -1,0 +1,29 @@
+<div class="content contentBg">
+    <div class="header2">
+        <div class="header2Title">
+            <back-View></back-View>
+            <h1 class="title H1">展馆分布</h1>
+        </div>
+    </div>
+    <div class="background2">
+        <div class="locationMap" id="locationMap">
+            <div id="wrapper">
+                <div id="scroller">
+                    <img id='map' usemap="#planetmap" border='0' />
+                    <map name="planetmap" id="planetmap">
+                        <ul style="list-style:none">
+                            <li ng-repeat="i in slides ">
+                                <a href="#map?hotId={{i.id}}&floorNo={{i.room.floorNo}}">
+                                    <area shape="circle" id="{{i.id}}" coords="{{i.mapAreaX1+','+i.mapAreaY1+',100'}}">
+                                </a>
+                            </li>
+                        </ul>
+                    </map>
+                    <div id="area" style="border:2px solid #F60;display:none"></div>
+                    <img id="myLocation" src="img/point.svg" style="display:none">
+                    <img id="exhibit" src="img/icon1.png" style="display:none" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

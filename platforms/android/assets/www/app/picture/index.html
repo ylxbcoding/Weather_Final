@@ -1,0 +1,59 @@
+<div id='pictureContent' class="content">
+    <div class="header2">
+        <div class="header2Title">
+            <back-View></back-View>
+            <h1 class="title H1">展品介绍</h1></div>
+    </div>
+    <div class="background1"></div>
+    <div class="picNineBox">
+        <div class="picNineBoxT1">
+            <div class="nineTitle">
+                Introduce
+            </div>
+        </div>
+        <div class="picNineBoxT2">
+            <div class="chinese">
+                展品
+            </div>
+            <div class="english">
+                SHANGHAI METEOROLOGICAL MUSEUM
+            </div>
+        </div>
+        <div class="picNine">
+            <div class="row1">
+                <div class="row_1" id="box1" ng-click='savePageNo(exhibitArray[0].id)'>
+                    <img ng-src="{{exhibitArray[0].titleImage}}">
+                </div>
+                <div class="row_2" id="box2" ng-click='savePageNo(exhibitArray[1].id)'>
+                    <img ng-src="{{exhibitArray[1].titleImage}}">
+                </div>
+                <div class="row_3" id="box3" ng-click='savePageNo(exhibitArray[2].id)'>
+                    <img ng-src="{{exhibitArray[2].titleImage}}">
+                </div>
+            </div>
+            <div class="row2">
+                <div class="row_1" id="box4">
+                    Introduce
+                </div>
+                <div class="row_2" id="box5" ng-click='savePageNo(exhibitArray[3].id)'>
+                    <img ng-src=" {{exhibitArray[3].thumbnail}}">
+                </div>
+            </div>
+            <div class="row3">
+                <div class="row_1" id="box6" ng-click='savePageNo(exhibitArray[4].id)'>
+                    <img ng-src="{{exhibitArray[4].titleImage}}">
+                </div>
+                <div class="row_2" id="box7" ng-click='savePageNo(exhibitArray[5].id)'>
+                    <img ng-src="{{exhibitArray[5].titleImage}}">
+                </div>
+                <div class="row_3" id="box8" ng-click='savePageNo(exhibitArray[6].id)'>
+                    <img ng-src="{{exhibitArray[6].titleImage}}">
+                </div>
+            </div>
+        </div>
+        <div class="pageBtn">
+            <div class="nextPageBtn"><img src="img/svg/pageForward.svg"></div>
+            <div class="backPageBtn"><img src="img/svg/pageBack.svg"></div>
+        </div>
+    </div>
+</div>

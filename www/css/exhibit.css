@@ -1,0 +1,150 @@
+.picImageDiv {
+    text-align: center;
+    width: 100%;
+    /*         box-shadow: 1px 1px 1px #999; */
+}
+
+.picImage {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.picDetailCenter {
+    height: 32px;
+    margin-top: 10px;
+}
+
+.picTitle {
+    float: left;
+    padding: 0 0 0 1%;
+    width: 70%;
+}
+
+.picTitle a {
+    color: #E35F13;
+}
+
+.picDetailIcon {
+    width: 15%;
+    height: 32px;
+    float: left;
+    line-height: 18px;
+    text-align: right;
+}
+
+.picDetailIcon img {
+    height: 11px;
+}
+
+.picPlusIcon {
+    width: 15%;
+    height: 32px;
+    float: left;
+    line-height: 32px;
+}
+
+.picPlusIcon img {
+    height: 25px;
+}
+
+.plusIcon {
+    line-height: 52px;
+}
+
+.pictitle {
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 2%;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.picenTitle {
+    font-size: 12px;
+    color: #777;
+    padding-left: 2%;
+    /* border-left: 1px #ccc solid; */
+    height: 12px;
+    line-height: 12px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.piccount {
+    font-size: 12px;
+    width: 40%;
+    float: left;
+    /* border-top: 1px #ccc solid; */
+    /* border-left: 1px #ccc solid; */
+    padding-left: 4%;
+    height: 20px;
+    line-height: 20px;
+}
+
+.piclocation {
+    font-size: 12px;
+    color: #444;
+    padding-left: 17%;
+    height: 20px;
+    line-height: 20px;
+}
+
+.piclocation a {
+    /*color: rgb(169,144,106);*/
+    color: #E35F13;
+}
+
+.picDescDiv {
+    margin: 10px 0;
+}
+
+.picDescLine {
+    width: 11%;
+    height: 200px;
+    float: left;
+    border-right: 2px #bbb solid;
+    margin-top: 5px;
+}
+
+.picDescribe {
+    padding: 0 6%;
+    margin-bottom: 39px;
+    /*height: 200px;*/
+    overflow: auto;
+    font-size: 12px;
+    line-height: 24px;
+    color: #666;
+    /* margin: 15px 5% 15px 8%; */
+    text-justify: inter-ideograph;
+    width: 80%;
+}
+
+.picPlusCon {
+    position: absolute;
+    width: 100%;
+    height: 44px;
+    bottom: 0;
+    background: #000;
+    box-shadow: 0px -1px 5px #bbb;
+}
+
+.picPlusCon div {
+    width: 33.3%;
+    text-align: center;
+    height: 100%;
+    line-height: 44px;
+    border-left: 1px #999 solid;
+    float: left;
+}
+
+.picPlusCon div img {
+    height: 22px;
+}
+
+.mapMarker {
+    border-right: 1px #999 solid;
+}

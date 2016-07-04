@@ -1,0 +1,60 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "com.dooble.audiotoggle": {
+            "PACKAGE_NAME": "com.jkinfo.weather"
+        },
+        "cordova-plugin-app-version": {
+            "PACKAGE_NAME": "com.jkinfo.weather"
+        },
+        "cordova-plugin-ble-central": {
+            "PACKAGE_NAME": "com.jkinfo.weather"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.jkinfo.weather"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.jkinfo.weather"
+        },
+        "cordova-plugin-device-orientation": {
+            "PACKAGE_NAME": "com.jkinfo.weather"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.jkinfo.weather"
+        },
+        "cordova-plugin-file-opener2": {
+            "PACKAGE_NAME": "com.jkinfo.weather"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "com.jkinfo.weather"
+        },
+        "cordova-plugin-media": {
+            "PACKAGE_NAME": "com.jkinfo.weather"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.jkinfo.weather"
+        },
+        "cordova-plugin-screen-orientation": {
+            "PACKAGE_NAME": "com.jkinfo.weather"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.jkinfo.weather"
+        },
+        "cordova-plugin-x-socialsharing": {
+            "PACKAGE_NAME": "com.jkinfo.weather"
+        },
+        "org.apache.cordova.plugin.cache": {
+            "PACKAGE_NAME": "com.jkinfo.weather"
+        },
+        "org.solderzzc.base64imagesaverplugin": {
+            "PACKAGE_NAME": "com.jkinfo.weather"
+        }
+    },
+    "dependent_plugins": {}
+}

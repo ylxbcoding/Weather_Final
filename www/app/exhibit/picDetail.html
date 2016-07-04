@@ -1,0 +1,40 @@
+<header class="bar bar-nav headerBar">
+    <back-View></back-View>
+    <h1 class="title H1">展品介绍</h1>
+</header>
+<div class="content picDetail marginTop" style="overflow: hidden;">
+    <div class="picImageDiv">
+        <a href="#bigImage/id={{ picDetailArray.id }}">
+            <img src="img/lazyload/16_9lazyload.jpg" class="picImage lazy">
+        </a>
+    </div>
+    <div class="picDetailCenter">
+        <div class="picDetailIcon">
+            <img src="img/svg/option.svg">
+        </div>
+        <div class="picTitle">
+            <div class="pictitle ">{{ picDetailArray.title }}</div>
+            <div class="picenTitle ">{{ picDetailArray.englishTitle }}</div>
+        </div>
+        <div class="picPlusIcon">
+            <a href="#bigImage/id={{ picDetailArray.id }}">
+                <img src="img/svg/cross.svg">
+            </a>
+        </div>
+    </div>
+    
+        <div class="piclocation "> 展品位置：<a>{{ picDetailArray.room.floorNo }}</a>层<a>{{ picDetailArray.room.roomNo }}</a>展厅&nbsp;&nbsp;&nbsp;浏览次数：<a>{{ picDetailArray.browseNum }}</a>
+        </div>
+    
+    <div class="picDescDiv">
+        <div class="picDescLine"></div>
+        <div class="picDescribe"></div>
+    </div>
+</div>
+<div class="picPlusCon">
+    <div class="picAudio"></div>
+    <div class="takephoto" take-photo><img src="img/svg/picCamera.svg"></div>
+    <a href="#location?exhibitId={{ picDetailArray.id }}">
+        <div class="mapMarker"><img src="img/svg/location.svg"></div>
+    </a>
+</div>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html ng-app="weatherApp">
+
+<head>
+    <meta http-equiv="Content-Security-Policy">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <title>Weather</title>
+    <!--    <link href="css/libsCss.min.css" rel="stylesheet" type="text/css">
+    <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="libs/font-awesome-4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="css/all.min.css" rel="stylesheet" type="text/css"> -->
+    <link href="libs/photoswipe/default-skin/default-skins.css" rel="stylesheet" type="text/css" />
+    <link href="libs/photoswipe/photoswipes.css" rel="stylesheet" type="text/css" />
+    <link href="libs/ratchet/css/ratchet.css" rel="stylesheet" type="text/css" />
+    <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="libs/font-awesome-4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="libs/ng-dialog/css/ngDialog.css" rel="stylesheet" type="text/css" />
+    <link href="css/camera.css" rel="stylesheet" type="text/css" />
+    <link href="css/exhibit.css" rel="stylesheet" type="text/css" />
+    <link href="css/help.css" rel="stylesheet" type="text/css" />
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
+    <link href="css/map.css" rel="stylesheet" type="text/css" />
+    <link href="css/picture.css" rel="stylesheet" type="text/css" />
+    <link href="css/welcome.css" rel="stylesheet" type="text/css" />
+    <link href="css/slideout.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="infoAlert" style="display: none">
+        <div class="infoAlertTitle">更新提示：</div>
+        <div class="divContent"></div>
+        <div class="appDownload" style="display: none;">
+            <div class="progress appDownloadprogress"></div>
+        </div>
+        <div id="updateAlertBtn1" style="display: none">
+            <div id="updateCancelBtn">忽略</div>
+            <div id="updateConfirmBtn">确认</div>
+        </div>
+        <div class="confirmBtn" id="updateAlertBtn2" style="display: none">
+            马上更新
+        </div>
+        <div class="confirmBtn" id="updateAlertBtn3" style="display: none">
+            取消下载
+        </div>
+        <div class="confirmBtn" id="updateAlertBtn4" style="display: none">
+            正在下载...
+        </div>
+    </div>
+    <div class="infoAlertBg" style="display: none"></div>
+    <div id="loadingImage"><img src="img/loading.gif">loading...</div>
+    <nav id="menu" class="menu" style="display: none">
+        <section class="menu-section">
+            <h3 class="menu-section-title">More</h3>
+            <ul class="menu-section-list">
+                <li><img src="img/svg/wall.svg"><a href="#picture">展品墙</a></li>
+                <li><img src="img/svg/map.svg"><a href="#location">平面图</a></li>
+                <li><img src="img/svg/camera.svg"><a take-photo>拍天气</a></li>
+                <li><img src="img/svg/setting.svg"><a href="#setting">设置</a></li>
+                <li><img src="img/svg/help.svg"><a href="#help">帮助</a></li>
+            </ul>
+        </section>
+    </nav>
+    <div id="panel">
+        <div ng-view></div>
+    </div>
+    <!--  <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/lib.min.js"></script>
+    <script type="text/javascript" src="js/all.min.js"></script>
+    <script type="text/javascript" src="js/comm.min.js"></script> -->
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="libs/angular/angular.js"></script>
+    <script type="text/javascript" src="libs/other/ng-cordova.js"></script>
+    <script type="text/javascript" src="libs/ng-dialog/js/ngDialog.js"></script>
+    <script type="text/javascript" src="libs/jquery/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="libs/jquery-hammerjs/hammer.min.js"></script>
+    <script type="text/javascript" src="libs/jquery-hammerjs/jquery.hammer.js"></script>
+    <script type="text/javascript" src="libs/angular/angular-route.js"></script>
+    <script type="text/javascript" src="libs/photoswipe/photoswipe.js"></script>
+    <script type="text/javascript" src="libs/photoswipe/photoswipe-ui-default.min.js"></script>
+    <script type="text/javascript" src="libs/other/touch-0.2.14.min.js"></script>
+    <script type="text/javascript" src="libs/other/jquery.lazyload.min.js"></script>
+    <script type="text/javascript" src="libs/other/iscroll-zoom.js"></script>
+    <script type="text/javascript" src="libs/other/sha1.js"></script>
+    <script type="text/javascript" src="libs/other/ngTouch.min.js"></script>
+    <script type="text/javascript" src="libs/other/slideout.min.js"></script>
+    <script type="text/javascript" src="app/main.js"></script>
+    <script type="text/javascript" src="app/comm.js"></script>
+    <script type="text/javascript" src="app/ble.js"></script>
+    <script type="text/javascript" src="app/other.js"></script>
+    <script type="text/javascript" src="app/map/init.js"></script>
+    <script type="text/javascript" src="app/exhibit/init.js"></script>
+    <script type="text/javascript" src="app/camera/init.js"></script>
+    <script type="text/javascript" src="app/picture/init.js"></script>
+    <script type="text/javascript" src="app/help/init.js"></script>
+    <script type="text/javascript" src="app/location/init.js"></script>
+    <script type="text/javascript" src="app/index/init.js"></script>
+    <script type="text/javascript" src="app/camera/js/camera.js"></script>
+    <script type="text/javascript" src="app/camera/js/canvasmerge.js"></script>
+    <script type="text/javascript" src="app/camera/js/share.js"></script>
+
+</html>
